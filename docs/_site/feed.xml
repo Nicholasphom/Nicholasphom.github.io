@@ -1,14 +1,226 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-09-17T19:33:27-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Nicholas’s Portfolio Website</title><subtitle>Your Site Description
-</subtitle><author><name>Nicholas Phomsopha</name></author><entry><title type="html">Welcome</title><link href="http://localhost:4000/2018/07/01/welcome.html" rel="alternate" type="text/html" title="Welcome" /><published>2018-07-01T00:00:00-07:00</published><updated>2018-07-01T00:00:00-07:00</updated><id>http://localhost:4000/2018/07/01/welcome</id><content type="html" xml:base="http://localhost:4000/2018/07/01/welcome.html"><![CDATA[<p>If you see this page, that means you have setup your site. enjoy! :ghost: :ghost: :ghost:</p>
+<?xml version="1.0" encoding="utf-8"?>
 
-<p>You may want to <a href="https://kitian616.github.io/jekyll-TeXt-theme/docs/en/configuration">config the site</a> or <a href="https://kitian616.github.io/jekyll-TeXt-theme/docs/en/writing-posts">writing a post</a> next. Please feel free to <a href="https://github.com/kitian616/jekyll-TeXt-theme/issues">create an issue</a> or <a href="mailto:kitian616@outlook.com">send me email</a> if you have any questions.</p>
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
+  <link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
+  <updated>2023-09-18T13:37:18-07:00</updated>
+  <id>http://localhost:4000/</id>
 
-<!--more-->
+  
+    <title type="html">Freelancer</title>
+  
 
-<hr />
+  
+    <subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle>
+  
 
-<p>If you like TeXt, don’t forget to give me a star. :star2:</p>
+  
 
-<p><a href="https://github.com/kitian616/jekyll-TeXt-theme/"><img src="https://img.shields.io/github/stars/kitian616/jekyll-TeXt-theme.svg?label=Stars&amp;style=social" alt="Star This Project" /></a></p>]]></content><author><name>Nicholas Phomsopha</name></author><category term="TeXt" /><summary type="html"><![CDATA[If you see this page, that means you have setup your site. enjoy! :ghost: :ghost: :ghost: You may want to config the site or writing a post next. Please feel free to create an issue or send me email if you have any questions.]]></summary></entry><entry><title type="html">Post with Header Image</title><link href="http://localhost:4000/2018/06/01/header-image.html" rel="alternate" type="text/html" title="Post with Header Image" /><published>2018-06-01T00:00:00-07:00</published><updated>2018-06-01T00:00:00-07:00</updated><id>http://localhost:4000/2018/06/01/header-image</id><content type="html" xml:base="http://localhost:4000/2018/06/01/header-image.html"><![CDATA[<p>A Post with Header Image, See <a href="https://kitian616.github.io/jekyll-TeXt-theme/samples.html#page-layout">Page layout</a> for more examples.</p>
+  
+  
+    <entry>
+      <title type="html">Project 1</title>
+      <link href="http://localhost:4000/" rel="alternate" type="text/html" title="Project 1" />
+      <published>2014-07-18T00:00:00-07:00</published>
+      <updated>2014-07-18T00:00:00-07:00</updated>
+      <id>http://localhost:4000/project-1</id>
+      <content type="html" xml:base="http://localhost:4000/"></content>
 
-<!--more-->]]></content><author><name>Nicholas Phomsopha</name></author><category term="TeXt" /><summary type="html"><![CDATA[A Post with Header Image, See Page layout for more examples.]]></summary></entry></feed>
+      
+      
+      
+      
+      
+
+      <author>
+          <name></name>
+        
+        
+      </author>
+
+      
+        <category term="Web Development" />
+      
+
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Project 2</title>
+      <link href="http://localhost:4000/" rel="alternate" type="text/html" title="Project 2" />
+      <published>2014-07-17T00:00:00-07:00</published>
+      <updated>2014-07-17T00:00:00-07:00</updated>
+      <id>http://localhost:4000/project-2</id>
+      <content type="html" xml:base="http://localhost:4000/"></content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name></name>
+        
+        
+      </author>
+
+      
+        <category term="Web Development" />
+      
+
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Project 3</title>
+      <link href="http://localhost:4000/" rel="alternate" type="text/html" title="Project 3" />
+      <published>2014-07-16T00:00:00-07:00</published>
+      <updated>2014-07-16T00:00:00-07:00</updated>
+      <id>http://localhost:4000/project-3</id>
+      <content type="html" xml:base="http://localhost:4000/"></content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name></name>
+        
+        
+      </author>
+
+      
+        <category term="Web Development" />
+      
+
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Project 4</title>
+      <link href="http://localhost:4000/" rel="alternate" type="text/html" title="Project 4" />
+      <published>2014-07-15T00:00:00-07:00</published>
+      <updated>2014-07-15T00:00:00-07:00</updated>
+      <id>http://localhost:4000/project-4</id>
+      <content type="html" xml:base="http://localhost:4000/"></content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name></name>
+        
+        
+      </author>
+
+      
+        <category term="Web Development" />
+      
+
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Project 6</title>
+      <link href="http://localhost:4000/" rel="alternate" type="text/html" title="Project 6" />
+      <published>2014-07-15T00:00:00-07:00</published>
+      <updated>2014-07-15T00:00:00-07:00</updated>
+      <id>http://localhost:4000/project-6</id>
+      <content type="html" xml:base="http://localhost:4000/"></content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name></name>
+        
+        
+      </author>
+
+      
+        <category term="Web Development" />
+      
+
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Project 5</title>
+      <link href="http://localhost:4000/" rel="alternate" type="text/html" title="Project 5" />
+      <published>2014-07-14T00:00:00-07:00</published>
+      <updated>2014-07-14T00:00:00-07:00</updated>
+      <id>http://localhost:4000/project-5</id>
+      <content type="html" xml:base="http://localhost:4000/"></content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name></name>
+        
+        
+      </author>
+
+      
+        <category term="Web Development" />
+      
+
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>
