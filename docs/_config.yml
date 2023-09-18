@@ -56,8 +56,8 @@ author:
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: Nicholasphom/jekyll-text-theme
-repository_tree: main
+repository: kitian616/jekyll-TeXt-theme
+repository_tree: gh-pages
 
 
 ## => Paths
@@ -224,3 +224,4 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+  - jekyll-github-metadata
