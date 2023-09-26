@@ -9,5 +9,63 @@ client: Self
 category: ETL Pipeline/BI
 ---
 
+# AWS Lambda Function: Earthquake Dashboard Pipeline
 
- This Project is to demonstrate a batch pipleine using AWS Lambda to an rds pipeline, then populating the data using tableau  [This is an external link to genome.gov](https://www.genome.gov/)
+<iframe src="https://public.tableau.com/views/earthquakes_16956986619940/Dashboard1?:showVizHome=no&:embed=true"
+ width="800" height="400" value=":original_view=yes" ></iframe>
+
+
+## Overview
+This AWS Lambda function is designed to automate the process of fetching earthquake data from the USGS Earthquake Catalog, transforming it into a suitable format, and then upserting (inserting or updating) the data into a MySQL database table. The function also ensures that duplicate data is not inserted into the database.
+
+## Steps
+Here's a detailed breakdown of what the Lambda function does:
+
+## Step 1: Data Retrieval
+The Lambda function starts by retrieving earthquake data from the USGS Earthquake Catalog. It fetches the data in CSV format using an HTTP GET request.
+
+```
+earthquake_url = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.csv'
+s = requests.get(earthquake_url).content
+earthquake_df = pd.read_csv(io.StringIO(s.decode('utf-8')))
+
+
+```
+
+# Step 2: Data Transformation
+
+The fetched data is converted into a Pandas DataFrame, making it easier to work with. Additionally, a new column called 'hash_column' is created in the DataFrame by combining all other columns and hashing the resulting string using SHA-256.
+
+# Step 3: Data Preprocessing
+Any NaN (Not a Number) values in the DataFrame are filled with '0.00' to ensure consistency.
+
+# Step 4: Data Type Mapping
+A mapping of Pandas data types to MySQL data types is defined to facilitate the subsequent database interaction.
+
+
+# Step 5: Database Connection
+The Lambda function establishes a connection to a MySQL database using environment variables for the database endpoint, username, and password.
+
+
+# Step 6: Check for Existing Data
+An SQL query is executed to retrieve hash values from an existing MySQL table in the "portfolio" database. These hash values represent the data that is already present in the database.
+
+
+# Step 7: Data Upsert
+The function then identifies new records in the DataFrame by comparing the hash values in the DataFrame with the retrieved hash values from the MySQL table. It filters the DataFrame to keep only the new records that are not present in the MySQL table.
+
+
+# Step 8: Data Insertion
+SQL INSERT statements are dynamically generated based on the data types and column names obtained earlier. The Lambda function iterates through the filtered DataFrame and inserts the new records into the MySQL table.
+
+
+
+# Step 9: Response
+Finally, the Lambda function returns a JSON response indicating the status of execution. If the function completes successfully, it returns a status code of 200 and a message of "Done." If an exception occurs, it returns a status code of 404 along with an error message.
+
+
+This Lambda function streamlines the process of acquiring earthquake data and ensuring that it's efficiently upserted into a MySQL database, maintaining data integrity and avoiding duplicate entries. It serves as an example of automation and data synchronization in a serverless environment.
+
+# Code 
+
+You Can find the full code [Here](https://github.com/Nicholasphom/Nicholasphom.github.io/blob/main/PortfolioCode/Project1/lambda_function.py)
