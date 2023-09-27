@@ -28,5 +28,7 @@ View this jekyll theme in action [here](https://jeromelachaud.com/freelancer-the
 ## Screenshot
 ![screenshot](https://raw.githubusercontent.com/jeromelachaud/freelancer-theme/master/screenshot.png)
 
+# serve locally
+go to docs and input "bundle exec jekyll serve"
 ---------
 For more details, read the [documentation](http://jekyllrb.com/)
