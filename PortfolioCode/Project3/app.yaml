@@ -1,0 +1,28 @@
+# https://cloud.google.com/appengine/docs/flexible/custom-runtimes/configuring-your-app-with-app-yaml#intro
+service: default
+runtime: custom
+env: flex
+
+manual_scaling:
+   instances: 1 # important as dekart designed to work on single instance
+
+resources:
+   memory_gb: 2.0 # recommended to handle up to 1M points
+
+env_variables:
+  DEKART_LOG_DEBUG: "1"
+  DEKART_POSTGRES_DB: "dekart"
+  DEKART_POSTGRES_USER: "postgres"
+  DEKART_POSTGRES_PASSWORD: "dekart"
+  DEKART_POSTGRES_PORT: "5432"
+  # see https://cloud.google.com/sql/docs/mysql/connect-app-engine-flexible
+  DEKART_POSTGRES_HOST: "10.61.48.3"
+  DEKART_CLOUD_STORAGE_BUCKET: "nicholasphom-dekart-portfolio"
+  DEKART_BIGQUERY_PROJECT_ID: "portfolio-400311"
+  DEKART_BIGQUERY_MAX_BYTES_BILLED: "53687091200"
+  DEKART_MAPBOX_TOKEN: "pk.eyJ1IjoibnBob20iLCJhIjoiY2xuMWVyMTJqMXlvcDJpbGRsbXo3enhtcSJ9.0Ik1U9jV2BKGfgu8ea1Bsg"
+  DEKART_CORS_ORIGIN: "$CORS_ORIGIN"
+
+beta_settings:
+  # see https://cloud.google.com/sql/docs/mysql/connect-app-engine-flexible
+   cloud_sql_instances: "portfolio-400311:europe-west1:portfolio=tcp:5432"

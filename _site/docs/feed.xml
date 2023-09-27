@@ -2,17 +2,13 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
-  <link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/docs/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2023-09-27T00:01:20-07:00</updated>
+  <updated>2023-09-27T00:00:27-07:00</updated>
   <id>http://localhost:4000/</id>
 
   
-    <title type="html">Data Engineer</title>
-  
 
-  
-    <subtitle>Hi. This is my site where i can showcase my work and expertise in the data engineering field. I have 5 Years of experience and always looking to expand my skillset!</subtitle>
   
 
   
@@ -21,11 +17,11 @@
   
     <entry>
       <title type="html">Project 1</title>
-      <link href="http://localhost:4000/" rel="alternate" type="text/html" title="Project 1" />
+      <link href="http://localhost:4000/docs/etl%20pipeline/bi/2023/09/20/project-1.html" rel="alternate" type="text/html" title="Project 1" />
       <published>2023-09-20T00:00:00-07:00</published>
       <updated>2023-09-20T00:00:00-07:00</updated>
-      <id>http://localhost:4000/project-1</id>
-      <content type="html" xml:base="http://localhost:4000/">&lt;h1 id=&quot;aws-lambda-function-earthquake-dashboard-pipeline&quot;&gt;AWS Lambda Function: Earthquake Dashboard Pipeline&lt;/h1&gt;
+      <id>http://localhost:4000/docs/etl%20pipeline/bi/2023/09/20/project-1</id>
+      <content type="html" xml:base="http://localhost:4000/docs/etl%20pipeline/bi/2023/09/20/project-1.html">&lt;h1 id=&quot;aws-lambda-function-earthquake-dashboard-pipeline&quot;&gt;AWS Lambda Function: Earthquake Dashboard Pipeline&lt;/h1&gt;
 
 &lt;iframe src=&quot;https://public.tableau.com/views/earthquakes_16956986619940/Dashboard1?:showVizHome=no&amp;amp;:embed=true&quot; width=&quot;800&quot; height=&quot;400&quot; value=&quot;:original_view=yes&quot;&gt;&lt;/iframe&gt;
 
@@ -106,11 +102,11 @@ earthquake_df = pd.read_csv(io.StringIO(s.decode(&apos;utf-8&apos;)))
   
     <entry>
       <title type="html">Project 2</title>
-      <link href="http://localhost:4000/" rel="alternate" type="text/html" title="Project 2" />
+      <link href="http://localhost:4000/docs/docker/cloud%20architect/2023/07/17/project-2.html" rel="alternate" type="text/html" title="Project 2" />
       <published>2023-07-17T00:00:00-07:00</published>
       <updated>2023-07-17T00:00:00-07:00</updated>
-      <id>http://localhost:4000/project-2</id>
-      <content type="html" xml:base="http://localhost:4000/">&lt;h1 id=&quot;docker-compose-for-hadoop-spark-and-airflow&quot;&gt;Docker Compose for Hadoop, Spark, and Airflow&lt;/h1&gt;
+      <id>http://localhost:4000/docs/docker/cloud%20architect/2023/07/17/project-2</id>
+      <content type="html" xml:base="http://localhost:4000/docs/docker/cloud%20architect/2023/07/17/project-2.html">&lt;h1 id=&quot;docker-compose-for-hadoop-spark-and-airflow&quot;&gt;Docker Compose for Hadoop, Spark, and Airflow&lt;/h1&gt;
 &lt;p&gt;This Docker Compose configuration is designed to set up a development environment for Hadoop, Spark, and Apache Airflow. It orchestrates various services and containers, making it easier to run and manage these components together.
 This is meant for you to run a sanitized develop enviorment and is a work in progress
 You can find the repo &lt;a href=&quot;https://github.com/Nicholasphom/datapipeline-docker/tree/master&quot;&gt;here&lt;/a&gt;&lt;/p&gt;</content>
@@ -143,11 +139,11 @@ You can find the repo &lt;a href=&quot;https://github.com/Nicholasphom/datapipel
   
     <entry>
       <title type="html">Project 3</title>
-      <link href="http://localhost:4000/" rel="alternate" type="text/html" title="Project 3" />
+      <link href="http://localhost:4000/docs/web%20development/2014/07/16/project-3.html" rel="alternate" type="text/html" title="Project 3" />
       <published>2014-07-16T00:00:00-07:00</published>
       <updated>2014-07-16T00:00:00-07:00</updated>
-      <id>http://localhost:4000/project-3</id>
-      <content type="html" xml:base="http://localhost:4000/">&lt;p&gt;Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.&lt;/p&gt;</content>
+      <id>http://localhost:4000/docs/web%20development/2014/07/16/project-3</id>
+      <content type="html" xml:base="http://localhost:4000/docs/web%20development/2014/07/16/project-3.html">&lt;p&gt;Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.&lt;/p&gt;</content>
 
       
       
@@ -177,11 +173,11 @@ You can find the repo &lt;a href=&quot;https://github.com/Nicholasphom/datapipel
   
     <entry>
       <title type="html">Project 4</title>
-      <link href="http://localhost:4000/" rel="alternate" type="text/html" title="Project 4" />
+      <link href="http://localhost:4000/docs/web%20development/2014/07/15/project-4.html" rel="alternate" type="text/html" title="Project 4" />
       <published>2014-07-15T00:00:00-07:00</published>
       <updated>2014-07-15T00:00:00-07:00</updated>
-      <id>http://localhost:4000/project-4</id>
-      <content type="html" xml:base="http://localhost:4000/">&lt;p&gt;Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.&lt;/p&gt;</content>
+      <id>http://localhost:4000/docs/web%20development/2014/07/15/project-4</id>
+      <content type="html" xml:base="http://localhost:4000/docs/web%20development/2014/07/15/project-4.html">&lt;p&gt;Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.&lt;/p&gt;</content>
 
       
       
@@ -211,11 +207,11 @@ You can find the repo &lt;a href=&quot;https://github.com/Nicholasphom/datapipel
   
     <entry>
       <title type="html">Project 6</title>
-      <link href="http://localhost:4000/" rel="alternate" type="text/html" title="Project 6" />
+      <link href="http://localhost:4000/docs/web%20development/2014/07/15/project-6.html" rel="alternate" type="text/html" title="Project 6" />
       <published>2014-07-15T00:00:00-07:00</published>
       <updated>2014-07-15T00:00:00-07:00</updated>
-      <id>http://localhost:4000/project-6</id>
-      <content type="html" xml:base="http://localhost:4000/">&lt;p&gt;Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.&lt;/p&gt;</content>
+      <id>http://localhost:4000/docs/web%20development/2014/07/15/project-6</id>
+      <content type="html" xml:base="http://localhost:4000/docs/web%20development/2014/07/15/project-6.html">&lt;p&gt;Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.&lt;/p&gt;</content>
 
       
       
@@ -245,11 +241,11 @@ You can find the repo &lt;a href=&quot;https://github.com/Nicholasphom/datapipel
   
     <entry>
       <title type="html">Project 5</title>
-      <link href="http://localhost:4000/" rel="alternate" type="text/html" title="Project 5" />
+      <link href="http://localhost:4000/docs/web%20development/2014/07/14/project-5.html" rel="alternate" type="text/html" title="Project 5" />
       <published>2014-07-14T00:00:00-07:00</published>
       <updated>2014-07-14T00:00:00-07:00</updated>
-      <id>http://localhost:4000/project-5</id>
-      <content type="html" xml:base="http://localhost:4000/">&lt;p&gt;Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.&lt;/p&gt;</content>
+      <id>http://localhost:4000/docs/web%20development/2014/07/14/project-5</id>
+      <content type="html" xml:base="http://localhost:4000/docs/web%20development/2014/07/14/project-5.html">&lt;p&gt;Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.&lt;/p&gt;</content>
 
       
       

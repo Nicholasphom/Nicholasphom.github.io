@@ -1,12 +1,15 @@
 ---
 layout: default
 modal-id: 2
-date: 2014-07-17
-img: cake.png
+date: 2023-07-17
+img: Docker Diagram.jpg
 alt: image-alt
 project-date: April 2014
-client: Start Bootstrap
-category: Web Development
+client: Self
+category: Docker/Cloud Architect
 ---
 
- Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+# Docker Compose for Hadoop, Spark, and Airflow
+This Docker Compose configuration is designed to set up a development environment for Hadoop, Spark, and Apache Airflow. It orchestrates various services and containers, making it easier to run and manage these components together.
+This is meant for you to run a sanitized develop enviorment and is a work in progress
+You can find the repo [here](https://github.com/Nicholasphom/datapipeline-docker/tree/master)

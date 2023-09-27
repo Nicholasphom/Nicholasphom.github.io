@@ -16,9 +16,11 @@ category: ETL Pipeline/BI
 
 
 ## Overview
+
 This AWS Lambda function is designed to automate the process of fetching earthquake data from the USGS Earthquake Catalog, transforming it into a suitable format, and then upserting (inserting or updating) the data into a MySQL database table. The function also ensures that duplicate data is not inserted into the database.
 
 ## Steps
+
 Here's a detailed breakdown of what the Lambda function does:
 
 ## Step 1: Data Retrieval

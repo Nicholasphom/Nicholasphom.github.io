@@ -1,0 +1,52 @@
+<h1 id="aws-lambda-function-earthquake-dashboard-pipeline">AWS Lambda Function: Earthquake Dashboard Pipeline</h1>
+
+<iframe src="https://public.tableau.com/views/earthquakes_16956986619940/Dashboard1?:showVizHome=no&amp;:embed=true" width="800" height="400" value=":original_view=yes"></iframe>
+
+<h2 id="overview">Overview</h2>
+
+<p>This AWS Lambda function is designed to automate the process of fetching earthquake data from the USGS Earthquake Catalog, transforming it into a suitable format, and then upserting (inserting or updating) the data into a MySQL database table. The function also ensures that duplicate data is not inserted into the database.</p>
+
+<h2 id="steps">Steps</h2>
+
+<p>Here’s a detailed breakdown of what the Lambda function does:</p>
+
+<h2 id="step-1-data-retrieval">Step 1: Data Retrieval</h2>
+<p>The Lambda function starts by retrieving earthquake data from the USGS Earthquake Catalog. It fetches the data in CSV format using an HTTP GET request.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>earthquake_url = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.csv'
+s = requests.get(earthquake_url).content
+earthquake_df = pd.read_csv(io.StringIO(s.decode('utf-8')))
+
+
+</code></pre></div></div>
+
+<h1 id="step-2-data-transformation">Step 2: Data Transformation</h1>
+
+<p>The fetched data is converted into a Pandas DataFrame, making it easier to work with. Additionally, a new column called ‘hash_column’ is created in the DataFrame by combining all other columns and hashing the resulting string using SHA-256.</p>
+
+<h1 id="step-3-data-preprocessing">Step 3: Data Preprocessing</h1>
+<p>Any NaN (Not a Number) values in the DataFrame are filled with ‘0.00’ to ensure consistency.</p>
+
+<h1 id="step-4-data-type-mapping">Step 4: Data Type Mapping</h1>
+<p>A mapping of Pandas data types to MySQL data types is defined to facilitate the subsequent database interaction.</p>
+
+<h1 id="step-5-database-connection">Step 5: Database Connection</h1>
+<p>The Lambda function establishes a connection to a MySQL database using environment variables for the database endpoint, username, and password.</p>
+
+<h1 id="step-6-check-for-existing-data">Step 6: Check for Existing Data</h1>
+<p>An SQL query is executed to retrieve hash values from an existing MySQL table in the “portfolio” database. These hash values represent the data that is already present in the database.</p>
+
+<h1 id="step-7-data-upsert">Step 7: Data Upsert</h1>
+<p>The function then identifies new records in the DataFrame by comparing the hash values in the DataFrame with the retrieved hash values from the MySQL table. It filters the DataFrame to keep only the new records that are not present in the MySQL table.</p>
+
+<h1 id="step-8-data-insertion">Step 8: Data Insertion</h1>
+<p>SQL INSERT statements are dynamically generated based on the data types and column names obtained earlier. The Lambda function iterates through the filtered DataFrame and inserts the new records into the MySQL table.</p>
+
+<h1 id="step-9-response">Step 9: Response</h1>
+<p>Finally, the Lambda function returns a JSON response indicating the status of execution. If the function completes successfully, it returns a status code of 200 and a message of “Done.” If an exception occurs, it returns a status code of 404 along with an error message.</p>
+
+<p>This Lambda function streamlines the process of acquiring earthquake data and ensuring that it’s efficiently upserted into a MySQL database, maintaining data integrity and avoiding duplicate entries. It serves as an example of automation and data synchronization in a serverless environment.</p>
+
+<h1 id="code">Code</h1>
+
+<p>You Can find the full code <a href="https://github.com/Nicholasphom/Nicholasphom.github.io/blob/main/PortfolioCode/Project1/lambda_function.py">Here</a></p>
