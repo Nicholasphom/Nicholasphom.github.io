@@ -2,11 +2,23 @@
 layout: default
 modal-id: 3
 date: 2014-07-16
-img: circus.png
+img: GCP Diagram.jpg
 alt: image-alt
-project-date: April 2014
+project-date: April 2022
 client: Start Bootstrap
 category: Web Development
 
 ---
-Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+# Introduction
+
+In this project I explored the idea of building serverless resources to host notebooks to run etl jobs on to export to bigquery.
+From there i was able to build visualizations on Dekart and Tableau(Not shown)
+
+# Notebook 
+ 
+
+# Visualizations 
+
+You can see the map [Here](../img/portfolio/Accidents.html)
+
+Warning, It is big

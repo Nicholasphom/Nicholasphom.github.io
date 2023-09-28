@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
   <link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2023-09-27T14:33:39-07:00</updated>
+  <updated>2023-09-28T15:56:37-07:00</updated>
   <id>http://localhost:4000/</id>
 
   
@@ -147,7 +147,18 @@ You can find the repo &lt;a href=&quot;https://github.com/Nicholasphom/datapipel
       <published>2014-07-16T00:00:00-07:00</published>
       <updated>2014-07-16T00:00:00-07:00</updated>
       <id>http://localhost:4000/project-3</id>
-      <content type="html" xml:base="http://localhost:4000/">&lt;p&gt;Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.&lt;/p&gt;</content>
+      <content type="html" xml:base="http://localhost:4000/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;In this project I explored the idea of building serverless resources to host notebooks to run etl jobs on to export to bigquery.
+From there i was able to build visualizations on Dekart and Tableau(Not shown)&lt;/p&gt;
+
+&lt;h1 id=&quot;notebook&quot;&gt;Notebook&lt;/h1&gt;
+
+&lt;h1 id=&quot;visualizations&quot;&gt;Visualizations&lt;/h1&gt;
+
+&lt;p&gt;You can see the map &lt;a href=&quot;../img/portfolio/Accidents.html&quot;&gt;Here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Warning, It is big&lt;/p&gt;</content>
 
       
       
@@ -168,7 +179,7 @@ You can find the repo &lt;a href=&quot;https://github.com/Nicholasphom/datapipel
       
 
       
-        <summary type="html">Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</summary>
+        <summary type="html">Introduction</summary>
       
 
       
@@ -181,7 +192,7 @@ You can find the repo &lt;a href=&quot;https://github.com/Nicholasphom/datapipel
       <published>2014-07-15T00:00:00-07:00</published>
       <updated>2014-07-15T00:00:00-07:00</updated>
       <id>http://localhost:4000/project-4</id>
-      <content type="html" xml:base="http://localhost:4000/">&lt;p&gt;Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.&lt;/p&gt;</content>
+      <content type="html" xml:base="http://localhost:4000/">&lt;h1 id=&quot;tbd&quot;&gt;TBD&lt;/h1&gt;</content>
 
       
       
@@ -196,13 +207,13 @@ You can find the repo &lt;a href=&quot;https://github.com/Nicholasphom/datapipel
       </author>
 
       
-        <category term="Web Development" />
+        <category term="TBD" />
       
 
       
 
       
-        <summary type="html">Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</summary>
+        <summary type="html">TBD</summary>
       
 
       
@@ -215,7 +226,7 @@ You can find the repo &lt;a href=&quot;https://github.com/Nicholasphom/datapipel
       <published>2014-07-15T00:00:00-07:00</published>
       <updated>2014-07-15T00:00:00-07:00</updated>
       <id>http://localhost:4000/project-6</id>
-      <content type="html" xml:base="http://localhost:4000/">&lt;p&gt;Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.&lt;/p&gt;</content>
+      <content type="html" xml:base="http://localhost:4000/">&lt;h1 id=&quot;tbd&quot;&gt;TBD&lt;/h1&gt;</content>
 
       
       
@@ -230,13 +241,13 @@ You can find the repo &lt;a href=&quot;https://github.com/Nicholasphom/datapipel
       </author>
 
       
-        <category term="Web Development" />
+        <category term="TBD" />
       
 
       
 
       
-        <summary type="html">Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</summary>
+        <summary type="html">TBD</summary>
       
 
       
@@ -249,7 +260,7 @@ You can find the repo &lt;a href=&quot;https://github.com/Nicholasphom/datapipel
       <published>2014-07-14T00:00:00-07:00</published>
       <updated>2014-07-14T00:00:00-07:00</updated>
       <id>http://localhost:4000/project-5</id>
-      <content type="html" xml:base="http://localhost:4000/">&lt;p&gt;Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.&lt;/p&gt;</content>
+      <content type="html" xml:base="http://localhost:4000/">&lt;p&gt;# TBD&lt;/p&gt;</content>
 
       
       
@@ -264,13 +275,13 @@ You can find the repo &lt;a href=&quot;https://github.com/Nicholasphom/datapipel
       </author>
 
       
-        <category term="Web Development" />
+        <category term="TBD" />
       
 
       
 
       
-        <summary type="html">Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</summary>
+        <summary type="html"># TBD</summary>
       
 
       

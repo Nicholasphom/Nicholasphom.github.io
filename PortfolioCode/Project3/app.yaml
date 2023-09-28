@@ -7,7 +7,7 @@ manual_scaling:
    instances: 1 # important as dekart designed to work on single instance
 
 resources:
-   memory_gb: 2.0 # recommended to handle up to 1M points
+   memory_gb: 4.0 # recommended to handle up to 1M points
 
 env_variables:
   DEKART_LOG_DEBUG: "1"
