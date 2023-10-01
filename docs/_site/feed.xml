@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
   <link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2023-09-30T20:50:56-07:00</updated>
+  <updated>2023-09-30T21:25:47-07:00</updated>
   <id>http://localhost:4000/</id>
 
   
@@ -149,22 +149,19 @@ You can find the repo &lt;a href=&quot;https://github.com/Nicholasphom/datapipel
       <id>http://localhost:4000/project-4</id>
       <content type="html" xml:base="http://localhost:4000/">&lt;h1 id=&quot;sacramento-county-spark-data-pipeline-project&quot;&gt;Sacramento County Spark Data Pipeline Project&lt;/h1&gt;
 
-&lt;p&gt;In this project I was brought on as a data engineering consultant to help with the initiative to redo Sacramento county’s data warehouse. This was a 4 month project. I was tasked mainly to architect the on premise resources as well as make plans to port over to AWS in the future.&lt;/p&gt;
+&lt;p&gt;In this project, I was brought on as a data engineering consultant to help with the initiative to redo Sacramento County’s data warehouse. This was a 4-month project. I was tasked mainly to architect the on-premise resources as well as make plans to port over to AWS in the future.&lt;/p&gt;
 
 &lt;h2 id=&quot;previous-architecture&quot;&gt;Previous Architecture&lt;/h2&gt;
 
-&lt;p&gt;Previously, they only have an oracle database replicated across 3 servers that connect directly to their applications. They shared a lot of data loads between their data analyst, front end engineers as well as the public facing website where users can see their data. they experienced a lot of downtime as well as performance issues depending on amount of users using database resources. Cost was a concern also as more Oracle servers required more licenses.&lt;/p&gt;
+&lt;p&gt;Previously, they only had an Oracle database replicated across 3 servers that connect directly to their applications. They shared a lot of data loads between their data analyst, front-end engineers, as well as the public-facing website where users can see their data. they experienced a lot of downtime as well as performance issues depending on amount of users using database resources. The cost was a concern also as more Oracle servers required more licenses.&lt;/p&gt;
 
 &lt;h2 id=&quot;proposed-solution&quot;&gt;Proposed Solution&lt;/h2&gt;
 
-&lt;p&gt;With the picture referenced above, I proposed a solution around the use of Python,Spark and other open sourced MySql Databases.
-First, we keep the Oracle database but we do ETL and CDC Extractions to a file system, in this case HDFS was used. File format stored is in parquet, since we can bake the schema into them.
-From there Delta tables are created from the extracted files, the main reason for delta tables is because it supports ACID transactions and rollbacks.
-Then the Delta tables are ported over to MYSQL using spark, from there the front end users can leverage MYSQL and data analysts can use Delta tables. This is to ensure no resource can be bottlenecked and open up more opportunity for experienced users to leverage spark and delta tables to do their work. All the ETL as well as CDC Jobs are managed by airflow and runs on an hourly basis&lt;/p&gt;
+&lt;p&gt;With the picture referenced above, I proposed a solution around the use of Python, Spark and other open-source MySql Databases. First, we keep the Oracle database but we do ETL and CDC Extractions to a file system, in this case, HDFS was used. The file format stored is in parquet since we can bake the schema into them. From there Delta tables are created from the extracted files, the main reason for delta tables is because it supports ACID transactions and rollbacks. Then the Delta tables are ported over to MYSQL using spark, from there the front-end users can leverage MYSQL and data analysts can use Delta tables. This is to ensure no resource can be bottlenecked and open up more opportunities for experienced users to leverage spark and delta tables to do their work. All the ETL, as well as CDC Jobs, are managed by airflow and run on an hourly basis&lt;/p&gt;
 
 &lt;h2 id=&quot;result&quot;&gt;Result&lt;/h2&gt;
 
-&lt;p&gt;We immediately saw 30% more uptime as well as a 40% less downtime if something does go down. Alot of Analyst are able to run their reports without fear of bringin the database down.&lt;/p&gt;</content>
+&lt;p&gt;We immediately saw 30% more uptime as well as 40% less downtime if something does go down. A lot of Analysts are able to run their reports without fear of bringing the database down.&lt;/p&gt;</content>
 
       
       
@@ -204,13 +201,17 @@ Then the Delta tables are ported over to MYSQL using spark, from there the front
 From there I was able to build visualizations on Dekart and Tableau(Not shown)&lt;/p&gt;
 
 &lt;h1 id=&quot;notebook&quot;&gt;Notebook&lt;/h1&gt;
-&lt;p&gt;The notebook is hosted on a serverless spark instance within GCP. From there I downloaded a decent sized dataset (3GB) to read in, prepare the data, apply my schema and upload it to bigquery. You Can see the norebook &lt;a href=&quot;https://github.com/Nicholasphom/Nicholasphom.github.io/blob/main/PortfolioCode/Project4/US_Acc_Spark.ipynb&quot;&gt;HERE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The notebook is hosted on a serverless spark instance within GCP. From there I downloaded a decent sized dataset (3GB) to read in, prepare the data, apply my schema and upload it to bigquery. You can see the notebook &lt;a href=&quot;https://github.com/Nicholasphom/Nicholasphom.github.io/blob/main/PortfolioCode/Project4/US_Acc_Spark.ipynb&quot;&gt;HERE&lt;/a&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;visualizations&quot;&gt;Visualizations&lt;/h1&gt;
 
 &lt;p&gt;You can see the map &lt;a href=&quot;../img/portfolio/Accidents.html&quot;&gt;Here&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Warning, It is big&lt;/p&gt;</content>
+&lt;p&gt;Warning, It is big&lt;/p&gt;
+
+&lt;h1 id=&quot;end-result&quot;&gt;End Result&lt;/h1&gt;
+
+&lt;p&gt;This is to show how easy it is to run alot of ETL as well as Coding POCs on GCP. Where you don’t have to manage servers or clusters, everything is managed as well as it being deleted by itself automatically. You can run ETL code on a notebook, have GCP automatically run it on a schedule and then shut down saving resources.&lt;/p&gt;</content>
 
       
       

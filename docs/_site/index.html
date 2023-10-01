@@ -469,22 +469,19 @@ You can find the repo <a href="https://github.com/Nicholasphom/datapipeline-dock
             
             <p><h1 id="sacramento-county-spark-data-pipeline-project">Sacramento County Spark Data Pipeline Project</h1>
 
-<p>In this project I was brought on as a data engineering consultant to help with the initiative to redo Sacramento county’s data warehouse. This was a 4 month project. I was tasked mainly to architect the on premise resources as well as make plans to port over to AWS in the future.</p>
+<p>In this project, I was brought on as a data engineering consultant to help with the initiative to redo Sacramento County’s data warehouse. This was a 4-month project. I was tasked mainly to architect the on-premise resources as well as make plans to port over to AWS in the future.</p>
 
 <h2 id="previous-architecture">Previous Architecture</h2>
 
-<p>Previously, they only have an oracle database replicated across 3 servers that connect directly to their applications. They shared a lot of data loads between their data analyst, front end engineers as well as the public facing website where users can see their data. they experienced a lot of downtime as well as performance issues depending on amount of users using database resources. Cost was a concern also as more Oracle servers required more licenses.</p>
+<p>Previously, they only had an Oracle database replicated across 3 servers that connect directly to their applications. They shared a lot of data loads between their data analyst, front-end engineers, as well as the public-facing website where users can see their data. they experienced a lot of downtime as well as performance issues depending on amount of users using database resources. The cost was a concern also as more Oracle servers required more licenses.</p>
 
 <h2 id="proposed-solution">Proposed Solution</h2>
 
-<p>With the picture referenced above, I proposed a solution around the use of Python,Spark and other open sourced MySql Databases.
-First, we keep the Oracle database but we do ETL and CDC Extractions to a file system, in this case HDFS was used. File format stored is in parquet, since we can bake the schema into them.
-From there Delta tables are created from the extracted files, the main reason for delta tables is because it supports ACID transactions and rollbacks.
-Then the Delta tables are ported over to MYSQL using spark, from there the front end users can leverage MYSQL and data analysts can use Delta tables. This is to ensure no resource can be bottlenecked and open up more opportunity for experienced users to leverage spark and delta tables to do their work. All the ETL as well as CDC Jobs are managed by airflow and runs on an hourly basis</p>
+<p>With the picture referenced above, I proposed a solution around the use of Python, Spark and other open-source MySql Databases. First, we keep the Oracle database but we do ETL and CDC Extractions to a file system, in this case, HDFS was used. The file format stored is in parquet since we can bake the schema into them. From there Delta tables are created from the extracted files, the main reason for delta tables is because it supports ACID transactions and rollbacks. Then the Delta tables are ported over to MYSQL using spark, from there the front-end users can leverage MYSQL and data analysts can use Delta tables. This is to ensure no resource can be bottlenecked and open up more opportunities for experienced users to leverage spark and delta tables to do their work. All the ETL, as well as CDC Jobs, are managed by airflow and run on an hourly basis</p>
 
 <h2 id="result">Result</h2>
 
-<p>We immediately saw 30% more uptime as well as a 40% less downtime if something does go down. Alot of Analyst are able to run their reports without fear of bringin the database down.</p>
+<p>We immediately saw 30% more uptime as well as 40% less downtime if something does go down. A lot of Analysts are able to run their reports without fear of bringing the database down.</p>
 
 </p>
             
@@ -537,13 +534,17 @@ Then the Delta tables are ported over to MYSQL using spark, from there the front
 From there I was able to build visualizations on Dekart and Tableau(Not shown)</p>
 
 <h1 id="notebook">Notebook</h1>
-<p>The notebook is hosted on a serverless spark instance within GCP. From there I downloaded a decent sized dataset (3GB) to read in, prepare the data, apply my schema and upload it to bigquery. You Can see the norebook <a href="https://github.com/Nicholasphom/Nicholasphom.github.io/blob/main/PortfolioCode/Project4/US_Acc_Spark.ipynb">HERE</a></p>
+<p>The notebook is hosted on a serverless spark instance within GCP. From there I downloaded a decent sized dataset (3GB) to read in, prepare the data, apply my schema and upload it to bigquery. You can see the notebook <a href="https://github.com/Nicholasphom/Nicholasphom.github.io/blob/main/PortfolioCode/Project4/US_Acc_Spark.ipynb">HERE</a></p>
 
 <h1 id="visualizations">Visualizations</h1>
 
 <p>You can see the map <a href="../img/portfolio/Accidents.html">Here</a></p>
 
 <p>Warning, It is big</p>
+
+<h1 id="end-result">End Result</h1>
+
+<p>This is to show how easy it is to run alot of ETL as well as Coding POCs on GCP. Where you don’t have to manage servers or clusters, everything is managed as well as it being deleted by itself automatically. You can run ETL code on a notebook, have GCP automatically run it on a schedule and then shut down saving resources.</p>
 </p>
             
             <ul class="list-inline item-details">
