@@ -12,9 +12,10 @@ category: Web Development
 # Introduction
 
 In this project I explored the idea of building serverless resources to host notebooks to run etl jobs on to export to bigquery.
-From there i was able to build visualizations on Dekart and Tableau(Not shown)
+From there I was able to build visualizations on Dekart and Tableau(Not shown)
 
 # Notebook 
+The notebook is hosted on a serverless spark instance within GCP. From there I downloaded a decent sized dataset (3GB) to read in, prepare the data, apply my schema and upload it to bigquery. You can see the notebook [HERE](https://github.com/Nicholasphom/Nicholasphom.github.io/blob/main/PortfolioCode/Project4/US_Acc_Spark.ipynb)
  
 
 # Visualizations 
@@ -22,3 +23,9 @@ From there i was able to build visualizations on Dekart and Tableau(Not shown)
 You can see the map [Here](../img/portfolio/Accidents.html)
 
 Warning, It is big
+
+
+# End Result
+
+
+This is to show how easy it is to run alot of ETL as well as Coding POCs on GCP. Where you don't have to manage servers or clusters, everything is managed as well as it being deleted by itself automatically. You can run ETL code on a notebook, have GCP automatically run it on a schedule and then shut down saving resources.
