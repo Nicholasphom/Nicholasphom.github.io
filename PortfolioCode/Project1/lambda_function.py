@@ -34,10 +34,12 @@ def lambda_handler(event, context):
             values = [row[column] for column in mysql_column_types.keys()]
             #print(values)
             cursor.execute(insert_statment, values)
+        cursor.commit()
+        cursor.close()
         
         return {
             'statusCode': 200,
-            'body': json.dumps(str("Done"))
+            'body': json.dumps(str(f"Uploaded {upsert_earthquake_df.shape[0]} Rows"))
             }
     except Exception as e:
         return {
