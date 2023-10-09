@@ -11,7 +11,7 @@ category: ETL Pipeline/BI
 
 # AWS Lambda Function: Earthquake Dashboard Pipeline
 
-<iframe src="https://public.tableau.com/views/earthquakes_16956986619940/Dashboard1?:showVizHome=no&:embed=true"
+<iframe src="https://public.tableau.com/views/earthquakes_16956986619940/Sheet1?:showVizHome=no&:embed=true"
  width="800" height="400" value=":original_view=yes" ></iframe>
 
 
